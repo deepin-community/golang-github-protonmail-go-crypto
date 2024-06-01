@@ -1,5 +1,169 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-protonmail-go-crypto (1.0.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Rebuild for unstable.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Martin Dosch <martin@mdosch.de>  Thu, 09 May 2024 13:48:42 +0000
+
+golang-github-protonmail-go-crypto (1.0.0-1) experimental; urgency=medium
+
+  * New upstream version 1.0.0
+  * d/watch: Check for upstream releases.
+  * d/control: Add "Breaks: golang-github-sylabs-sif-dev (<= 2.15.0)".
+
+ -- Martin Dosch <martin@mdosch.de>  Sat, 09 Mar 2024 13:33:26 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230923.afb1ddc-1) experimental; urgency=medium
+
+  * New upstream version 0.0~git20230923.afb1ddc
+
+ -- Martin Dosch <martin@mdosch.de>  Sun, 19 Nov 2023 01:42:21 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230710.e01326f-1) experimental; urgency=medium
+
+  * New upstream version 0.0~git20230710.e01326f
+  * d/control: Add "Breaks: golang-github-sylabs-sif-dev (<= 2.8.3-2)"
+
+ -- Martin Dosch <martin@mdosch.de>  Fri, 14 Jul 2023 12:08:44 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230626.7e9e0390.0~really~git20230619.3fbb1f1-2) unstable; urgency=medium
+
+  * New upstream version 0.0~git20230626.7e9e0390+really+git20230619.3fbb1f1
+  * d/patches: Add patch to fix s2k tests on 32bit architectures.
+
+ -- Martin Dosch <martin@mdosch.de>  Tue, 11 Jul 2023 04:31:55 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230626.7e9e0390.0-1) experimental; urgency=medium
+
+  * Update to upstream version 0.0_git20230626.7e9e0390.
+
+ -- Martin Dosch <martin@mdosch.de>  Sun, 09 Jul 2023 09:40:14 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230626.7e9e0390.0~really~git20230619.3fbb1f1-1) unstable; urgency=medium
+
+  * Revert upload of 0.0~git20230626.7e9e039-1 due to regressions.
+
+ -- Martin Dosch <martin@mdosch.de>  Mon, 03 Jul 2023 15:07:10 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230626.7e9e039-1) unstable; urgency=medium
+
+  * New upstream version 0.0~git20230626.7e9e039
+
+ -- Martin Dosch <martin@mdosch.de>  Sun, 02 Jul 2023 08:56:14 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230619.3fbb1f1-3) unstable; urgency=medium
+
+  * d/control: Change "Breaks:" for golang-github-sylabs-sif from "<= 2.8.3-2" to "<= 2.8.3-1".
+
+ -- Martin Dosch <martin@mdosch.de>  Sat, 01 Jul 2023 22:37:05 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230619.3fbb1f1-2) unstable; urgency=medium
+
+  * d/control: Add "Breaks: golang-github-sylabs-sif-dev (<= 2.8.3-2)".
+
+ -- Martin Dosch <martin@mdosch.de>  Sat, 01 Jul 2023 04:58:53 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230619.3fbb1f1-1) experimental; urgency=medium
+
+  * New upstream version 0.0~git20230619.3fbb1f1
+
+ -- Martin Dosch <martin@mdosch.de>  Tue, 20 Jun 2023 18:25:36 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230528.6f98819-1) experimental; urgency=medium
+
+  * New upstream version 0.0~git20230528.6f98819.
+  * d/control: Add "Breaks: golang-github-sylabs-sif-dev (<= 2.8.3).
+  * d/control: Add build-dep and dep
+    on golang-github-cloudflare-circl-dev (>= 1.2.0).
+  * Remove patch to check length of subpackets when parsing signatures.
+
+ -- Martin Dosch <martin@mdosch.de>  Mon, 12 Jun 2023 10:34:55 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230124.0acdc8a-4) unstable; urgency=medium
+
+  * Add patch to check length of subpackets when parsing signatures.
+
+ -- Martin Dosch <martin@mdosch.de>  Wed, 19 Apr 2023 10:02:10 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230124.0acdc8a-3) unstable; urgency=medium
+
+  * d/control: Use binary package name for "Breaks:".
+
+ -- Martin Dosch <martin@mdosch.de>  Fri, 27 Jan 2023 12:55:51 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230124.0acdc8a-2) unstable; urgency=medium
+
+  * d/control: Add "Breaks golang-github-protonmail-gopenpgp (<= 2.5.1)".
+
+ -- Martin Dosch <martin@mdosch.de>  Fri, 27 Jan 2023 05:55:10 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230124.0acdc8a-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Martin Dosch <martin@mdosch.de>  Thu, 26 Jan 2023 18:24:00 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230117.a47887b-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Martin Dosch <martin@mdosch.de>  Wed, 18 Jan 2023 19:24:05 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230113.068501e-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Martin Dosch <martin@mdosch.de>  Mon, 16 Jan 2023 17:45:46 +0000
+
+golang-github-protonmail-go-crypto (0.0~git20230109.7efeeb0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version.
+
+ -- Martin Dosch <martin@mdosch.de>  Thu, 12 Jan 2023 01:19:00 +0530
+
+golang-github-protonmail-go-crypto (0.0~git20220930.c6815a8-1) unstable; urgency=medium
+
+  * Team Upload.
+  * New upstream version.
+
+ -- Martin Dosch <martin@mdosch.de>  Thu, 06 Oct 2022 09:27:49 +0200
+
+golang-github-protonmail-go-crypto (0.0~git20220824.4b6e5c5-1) unstable; urgency=medium
+
+  * Team Upload.
+  * New upstream version.
+
+ -- Martin Dosch <martin@mdosch.de>  Thu, 01 Sep 2022 22:14:54 +0530
+
+golang-github-protonmail-go-crypto (0.0~git20220819.33af46d-1) unstable; urgency=medium
+
+  * Team Upload.
+  * New upstream version.
+
+ -- Martin Dosch <martin@mdosch.de>  Fri, 19 Aug 2022 19:00:27 +0530
+
+golang-github-protonmail-go-crypto (0.0~git20220623.5afb4c2-1) unstable; urgency=medium
+
+  * Team Upload.
+  * New upstream version.
+
+ -- Martin Dosch <martin@mdosch.de>  Sun, 10 Jul 2022 18:08:39 +0530
+
+golang-github-protonmail-go-crypto (0.0~git20210920.87db9fb-3) unstable; urgency=medium
+
+  * Team Upload.
+  * d/rules: Disable tests on ppc64el
+
+ -- Nilesh Patra <nilesh@debian.org>  Sat, 15 Jan 2022 18:52:58 +0530
+
+golang-github-protonmail-go-crypto (0.0~git20210920.87db9fb-2) unstable; urgency=medium
+
+  * Source only upload for migration to testing
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 18 Nov 2021 12:14:00 +0530
+
+golang-github-protonmail-go-crypto (0.0~git20210920.87db9fb-1) unstable; urgency=medium
+
+  * Initial release (Closes: #998647)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 05 Nov 2021 19:59:03 +0530

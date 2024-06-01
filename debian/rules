@@ -1,4 +1,11 @@
 #!/usr/bin/make -f
+export DH_GOLANG_INSTALL_EXTRA := openpgp/test_data
 
 %:
-	dh $@
+	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
+
+ifneq (,$(filter $(DEB_HOST_ARCH), ppc64el))
+override_dh_auto_test:
+	# Ignore test on ppc64el until https://github.com/ProtonMail/go-crypto/issues/97 is fixed
+	-dh_auto_test
+endif
